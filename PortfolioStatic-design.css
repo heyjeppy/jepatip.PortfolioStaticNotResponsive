@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+/* NAVIGATION SECTION */
+
+.navbar-main,
+.navbar-link {
+  display: flex;
+}
+
+.navbar-main {
+  justify-content: space-around;
+  align-items: center;
+  height: 12vh;
+}
+
+.navbar-link {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: double;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar-logo:hover {
+  cursor: default;
+}
+
+/* HOME SECTION */
+
+.portfolio-home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 10%;
+    padding-left: 80px;
+    
+}
+
+.portfolio-home .portfolio-home-main-section{
+    position: relative;
+    width: 40%;
+}
+.portfolio-home .portfolio-home-main-section h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+}
+.portfolio-home .portfolio-home-main-section h3{
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.portfolio-home .portfolio-home-main-section p{
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.portfolio-home .portfolio-home-main-section .btn{
+    padding: 15px 20px;
+    background-color: #000000;
+    border: 1px solid #222222;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.portfolio-home .portfolio-home-main-section .btn:hover{
+    color: #ffffff;
+    transition: 0.3s;
+    background-color: #000000;
+    border: 1px solid ;
+}
+.portfolio-home .portfolio-home-photo-section{
+    width: 40%;
+    margin-right: 50px;
+}
+.portfolio-home .portfolio-home-photo-section img{
+    width: 70%;
+    margin-left: 7rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgb(231, 231, 231);
+}
+
+/* ABOUT SECTION */
+
+.portfolio-about {
+  position: relative;
+}
+
+.portfolio-about h1 {
+  text-align: center;
+  padding-top: 80px;
+  text-transform: uppercase;
+}
+
+.portfolio-about-card-container {
+  display: flex;
+  gap: 25px;  
+  justify-content: center;
+  padding-top: 50px;
+  border-radius: 20px;
+}
+
+.portfolio-about-card {
+  display: inline-block;
+  background: white;
+  border-radius: 8px 8px 0 0;
+}
+
+.portfolio-about-card .portfolio-about-image-box {
+  height: 320px;
+}
+
+.portfolio-about-card .portfolio-about-image-box img {
+  width: 300px;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+  background-color: rgb(48, 48, 48);
+  object-fit: cover;
+}
+
+.portfolio-about-card .portfolio-about-details {
+  padding: 15px;
+  column-gap: 12px;
+  align-items: center;
+  display: flex;
+}
+
+.portfolio-about-card .portfolio-about-details img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.portfolio-about-card .portfolio-about-details h4 {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+.portfolio-about-card .portfolio-about-details h5 {
+  font-size: 10px;
+  font-weight: normal;
+  color: black;
+}
+
+
+/* SERVICES SECTION */
+
+.portfolio-services {
+  position: relative;
+}
+
+.portfolio-services h1 {
+  text-align: center;
+  padding-top: 80px;
+  text-transform: uppercase;
+}
+
+.portfolio-services-container {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 80px 20px 80px;
+}
+
+.portfolio-services-container img {
+  width: 100px;
+  padding: 10px;
+  border: 4px double transparent;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* CONTACT SECTION */
+
+.portfolio-contact {
+  position: relative;
+}
+
+.portfolio-contact h1 {
+  text-align: center;
+  padding-top: 100px;
+  text-transform: uppercase;
+}
+
+.portfolio-contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 20px;
+}
+
+.portfolio-contact-details h4 {
+  color: #000000;
+  padding: 20px;
+  font-size: 17px;
+}
+
+.portfolio-contact-details img {
+  width: 13px;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  margin: 30px;
+  font-size: 10px;
+}
